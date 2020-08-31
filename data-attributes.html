@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        margin-bottom: 20px;
+      }
+      div[data-person-age="25"] {
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-person-age="25" data-name="jaeseon"></div>
+    <div data-person-age="24" data-name="yousung"></div>
+    <span data-person-age="25" data-name="jaeseon">염재선</span>
+    <script>
+      const value = document.querySelector('div[data-person-age="25"]');
+      console.log(value.dataset);
+      console.log(value.dataset.personAge);
+      console.log(value.dataset.name);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --background-color: pink;
+        --text-color: blue;
+        --font-size: 8px;
+      }
+      .list {
+        background-color: var(--background-color);
+      }
+      .first-list li {
+        color: var(--text-color);
+        font-size: var(--font-size);
+      }
+      .second-list li {
+        font-size: calc(var(--font-size) * 3);
+      }
+      @media screen and (max-width: 768px) {
+        :root {
+          --background-color: hotpink;
+          --text-color: red;
+          --font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list first-list">
+      <li>사자</li>
+      <li>호랑이</li>
+      <li>표범</li>
+    </ul>
+    <ul class="list second-list">
+      <li>염재선</li>
+      <li>강수호</li>
+      <li>김갑수</li>
+    </ul>
+  </body>
+</html>
